@@ -30,7 +30,7 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-b text-black font-serif  mx-auto">
       <div className="container mx-auto py-8 px-4 max-w-5xl">
         <header className="container mx-auto py-8 px-4">
-          <h1 className="text-5xl font-bold py-8">LLM Mapper</h1>
+          <h1 className="text-5xl font-bold py-8">🧢 LLM Mapper</h1>
           <p className="mt-2 text-xl">
             Use OpenAI SDK with Anthropic&apos;s Claude models.
           </p>
