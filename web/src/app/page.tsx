@@ -48,8 +48,8 @@ export default function Home() {
         <div>
           <h2 className="text-3xl font-semibold mb-4">Get started</h2>
           <p className="text-lg mb-6">
-            It's easy to get started with LLM Mapper. Just follow these simple
-            steps:
+            It&apos;s easy to get started with LLM Mapper. Just follow these
+            simple steps:
           </p>
           <h3>Step 1: Change the base URL</h3>
           <div className="mb-8">
@@ -69,7 +69,7 @@ export default function Home() {
             <h2 className="text-3xl font-semibold mb-4">Why use LLM Mapper?</h2>
             <ul className="list-disc list-inside text-lg mb-6">
               <li>Seamless integration with existing OpenAI codebase</li>
-              <li>Access to Anthropic's powerful Claude models</li>
+              <li>Access to Anthropic&apos;s powerful Claude models</li>
               <li>No code changes required</li>
               <li>Open-source and free to use</li>
             </ul>
@@ -78,9 +78,9 @@ export default function Home() {
             <h2 className="text-3xl font-semibold mb-4">How it works</h2>
             <p className="text-lg mb-6">
               LLM Mapper acts as a bridge between your OpenAI API calls and
-              Anthropic's Claude API. It translates your requests on-the-fly,
-              allowing you to use Claude's capabilities without changing your
-              existing code structure.
+              Anthropic&apos;s Claude API. It translates your requests
+              on-the-fly, allowing you to use Claude&apos;s capabilities without
+              changing your existing code structure.
             </p>
           </div>
         </div>
