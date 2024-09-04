@@ -189,7 +189,7 @@ export default function Home() {
             to contribute, please open an issue or a pull request on GitHub.
           </p>
           <a
-            href="https://github.com/your-repo/llm-mapper"
+            href="https://github.com/Helicone/llmmapper"
             className="bg-blue-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-600 transition duration-300"
           >
             View on GitHub
