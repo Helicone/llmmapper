@@ -29,18 +29,18 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b text-black font-serif">
       <header className="container mx-auto py-8 px-4">
-        <h1 className="text-4xl font-bold">LLM Mapper</h1>
+        <h1 className="text-5xl font-bold py-8">LLM Mapper</h1>
         <p className="mt-2 text-xl">
-          Automatically map OpenAI API calls to Anthropic's Claude
+          Automatically map OpenAI API calls to Anthropic&apos;s Claude
         </p>
       </header>
 
-      <section className="container mx-auto py-8 px-4">
+      <section className="container mx-auto px-4">
         <p className="text-lg mb-6">
           LLM Mapper is a powerful tool that allows you to seamlessly use
-          Anthropic's Claude models with your existing OpenAI API integration.
-          No code changes required - just update your base URL and start
-          leveraging Claude's capabilities instantly.
+          Anthropic&apos;s Claude models with your existing OpenAI API
+          integration. No code changes required - just update your base URL and
+          start leveraging Claude&apos;s capabilities instantly.
         </p>
       </section>
 
@@ -174,10 +174,12 @@ export default function Home() {
 
       <section className="py-16 bg-blue-100">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-semibold mb-4">Ready to get started?</h2>
+          <h2 className="text-3xl font-semibold mb-4">
+            Issues or want to contibute?
+          </h2>
           <p className="text-lg mb-6">
-            Start using LLM Mapper today and experience the power of Claude with
-            your existing OpenAI integration.
+            LLM Mapper is an open source project. If you find any issues or want
+            to contribute, please open an issue or a pull request on GitHub.
           </p>
           <a
             href="https://github.com/your-repo/llm-mapper"
