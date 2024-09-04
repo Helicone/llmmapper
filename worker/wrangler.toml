@@ -1,8 +1,13 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "worker"
+name = "llm-mapper"
 main = "src/index.ts"
 compatibility_date = "2024-08-21"
-compatibility_flags = ["nodejs_compat"]
+[env.production]
+name = "llm-mapper-worker-prod"
+routes = [
+    { pattern = "gateway.llmmapper.com", custom_domain = true, zone_name = "llmmapper.com" },
+]
+
 
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure

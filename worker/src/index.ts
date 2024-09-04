@@ -14,7 +14,8 @@ export default {
 			return new Response('Method not allowed', { status: 405 });
 		}
 
-		if (request.url.includes('oai2ant') || env.WORKER_TYPE === 'OAI_2_ANT') {
+		const url = new URL(request.url);
+		if (url.pathname.startsWith('/oai2ant') || env.WORKER_TYPE === 'OAI_2_ANT') {
 			const body = await request.json<OpenAIRequestBody>();
 			if (body?.stream) {
 				return oaiStream2antStream({ body: body, headers: request.headers });
