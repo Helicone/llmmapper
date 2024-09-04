@@ -2,25 +2,30 @@ import Image from "next/image";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism";
 
+const codeString1 = `const openai = new OpenAI({
+  apiKey: process.env.ANTHROPIC_API_KEY,
+  baseURL: "https://llmmapper.com/oai2ant/v1",
+});
+`;
+
+const codeString2 = `const chatCompletion = await openai.chat.completions.create({
+  model: "claude-3-opus-20240229",
+  messages: [
+    {
+      role: "system",
+      content: "You are a helpful assistant.",
+    },
+    {
+      role: "user",
+      content: "Tell me a short joke about programming.",
+    },
+  ],
+  max_tokens: 100,
+  stream: true,
+});
+`;
+
 export default function Home() {
-  const codeString = `
-import llm_mapper
-
-# Initialize the mapper
-mapper = llm_mapper.Mapper()
-
-# Add your LLM models
-mapper.add_model("GPT-3")
-mapper.add_model("BERT")
-mapper.add_model("T5")
-
-# Generate the map
-map = mapper.generate_map()
-
-# Visualize the results
-mapper.visualize(map)
-  `;
-
   return (
     <main className="min-h-screen bg-gradient-to-b text-black font-serif">
       <header className="container mx-auto py-8 px-4">
@@ -32,12 +37,19 @@ mapper.visualize(map)
         <div>
           <h2 className="text-3xl font-semibold mb-4">Get started</h2>
           <p className="text-lg mb-6">
-            It's easy to get started with LLM Mapper. Just follow these simple
-            steps:
+            It{"'"}s easy to get started with LLM Mapper. Just follow these
+            simple steps:
           </p>
+          <h3>Step 1: Change the base URL</h3>
           <div className="mb-8">
             <SyntaxHighlighter language="typescript" style={tomorrow}>
-              {codeString}
+              {codeString1}
+            </SyntaxHighlighter>
+          </div>
+          <h3>Step 2: Start using Claude!</h3>
+          <div className="mb-8">
+            <SyntaxHighlighter language="typescript" style={tomorrow}>
+              {codeString2}
             </SyntaxHighlighter>
           </div>
         </div>
